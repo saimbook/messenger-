@@ -1,0 +1,6 @@
+{
+  "name": "বার্তা (BARTA)",
+  "description": "BARTA (বার্তা) - A lightweight, 2G/low-internet optimized real-time messaging and free audio calling Android app with WhatsApp-style settings and Firebase backend.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

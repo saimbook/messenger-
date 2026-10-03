@@ -1,0 +1,84 @@
+{
+  "rules": {
+    "adminPasscodes": {
+      "$adminId": {
+        ".read": "auth != null",
+        ".write": "auth != null"
+      }
+    },
+    "users": {
+      ".read": "auth != null",
+      "$uid": {
+        ".read": "auth != null",
+        ".write": "auth != null"
+      }
+    },
+    "admins": {
+      ".read": "auth != null",
+      "$adminUid": {
+        ".read": "auth != null",
+        ".write": "auth != null"
+      }
+    },
+    "reports": {
+      ".read": "auth != null",
+      "$reportId": {
+        ".read": "auth != null",
+        ".write": "auth != null"
+      }
+    },
+    "adminAuditLogs": {
+      ".read": "auth != null",
+      "$logId": {
+        ".read": "auth != null",
+        ".write": "auth != null"
+      }
+    },
+    "rooms": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    },
+    "messages": {
+      "$roomId": {
+        ".read": "auth != null",
+        ".write": "auth != null",
+        ".indexOn": ["timestamp", "senderId"]
+      }
+    },
+    "calls": {
+      ".read": "auth != null",
+      "$callId": {
+        ".read": "auth != null",
+        ".write": "auth != null"
+      }
+    },
+    "presence": {
+      "$uid": {
+        ".read": "auth != null",
+        ".write": "auth != null"
+      }
+    },
+    "systemStats": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    },
+    "suspendedUsers": {
+      ".read": "auth != null",
+      "$uid": {
+        ".write": "auth != null"
+      }
+    },
+    "config": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    },
+    "appFeatures": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    },
+    "systemBroadcasts": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    }
+  }
+}
